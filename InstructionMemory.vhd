@@ -15,7 +15,7 @@ architecture Behavioral of InstructionMemory is
     signal IMem : Memory := (others => X"00000000");  -- Initialize with zeros
 
     -- File declaration for reading the instructions
-    file imem_file : text open read_mode is "test.dat";
+    file imem_file : text open read_mode is "test.bin";
 
 begin
     -- Process to read instructions from the file and initialize IMem
